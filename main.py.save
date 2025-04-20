@@ -1,0 +1,17 @@
+def get_book_text(filepath)
+	with open(filepath) as book:
+		text = book.read()
+	return text
+
+def book_to_words(text):
+        words = text.split()
+	number = len(words)
+	print(number)
+def main():
+	filepath = "books/frankenstein.txt"
+	text = get_book_text(filepath)
+	words = book_to_words(text)
+	
+
+
+main()
